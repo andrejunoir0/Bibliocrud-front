@@ -7,6 +7,10 @@ const LoginFuncionario = () => {
         var novaURL = "/Funcionario";
         window.location.href = novaURL;
     };
+    const Voltar = () => {
+        var novaURL = "/";
+        window.location.href = novaURL;
+    };
     return (
         
         <div className="home h1">
@@ -30,7 +34,8 @@ const LoginFuncionario = () => {
                     <input className="myInput" placeholder="Senha"></input>
                 </div><br />
                 <button className="botao" onClick={handleClick}>Entrar</button>
-            </div>
+                <button className='botao' onClick={Voltar}>Voltar</button>
+            </div> 
         </div>
     )
 }

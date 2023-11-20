@@ -1,24 +1,35 @@
 
+import { BrowserRouter } from 'react-router-dom';
+import NavBar from '../../Componentes/NavBar';
+import Rodape from '../../Componentes/Rodape/Rodape';
 import './Funcionario.css';
+
 
 const Funcionário = () => {
 
-    return (
+    return ( 
         <div>
+           
             <div>
-
+              <NavBar/>
+               
                 <div className="card">
                     <a href="/cadastro" className='text'>+ Adiocionar Funcionário</a>
                     <h3 className='text2'>Funcionário</h3>
                     <br/>
                     <br/>
-                    <br/>
-                    <h4 className='text'>Data do registro</h4>
-                    <h4 className='text2'>Nome</h4>
-                    <h4 className='text3'>Nivel do Acesso</h4>
+                    <div className='card2'>
+                    <h4 className='text3'>Nome</h4>
+                    <h4 className='text'>Nivel do Acesso</h4>
+                    <h4 className='text4'>Data do registro</h4>
+                    </div>
+                    
+                   
                 </div>
+                
                                 
             </div>
+            <Rodape/>
 
 
         </div>

@@ -1,12 +1,12 @@
 import './Home.css';
 import { Link } from "react-router-dom";
-
+import Navbar from  './Componentes/NavBar/NavBar'
 const Home = () => {
 
     return (
-
+            
         <div className="home h1">
-
+                <Navbar/>
             <h2>Funcionário</h2>
             <div className="card">
 
